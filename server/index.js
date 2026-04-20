@@ -7,6 +7,7 @@ app.use(express.json({ limit: '50mb' }));
 // API routes
 app.use('/', require('./routes/health'));
 app.use('/api/files', require('./routes/files'));
+app.use('/api/testfile', require('./routes/testfile'));
 
 // Serve static build output
 const distPath = path.join(__dirname, '..', 'dist');
